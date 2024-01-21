@@ -1,155 +1,214 @@
 *{
-margin: 0;
-padding: 0;
-font-size: 15;
-font-family:"Poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body {
-    height: 100vh;
+html,body{
     width: 100vw;
-    margin: 0; /* Remove default margin */
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    background-color: rgba(16, 64, 153, 0.466);
+    height: 100vh;
+    font-family: sans-serif;
+    background-color: rgb(101, 192, 253);
 }
-
-.main {
-    height: 85%;
-    width: 22%;
-    background: linear-gradient(to bottom, rgba(3, 0, 0, 0.842), rgba(3, 0, 0, 0.836)); /* Black gradient for mobile devices */
-    background-color: initial; 
-    border-radius: 40px;
-    overflow: hidden;
-}
-
-.mainbody {
-    height: 92%;
-    width: 92%;
-    background-color: rgba(75, 73, 73, 0.253);
-    margin: 20px auto; /* Center both horizontally and vertically */
-    border-radius: 30px;
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-}
- .big{
-    margin-left:5px ;
-    margin-top: 3px;
-    color: rgba(105, 104, 102, 0.253);
-}
-.small{
-    margin-right: 5px;
-    margin-top: 5px;
-    font-size: 5px;
-    color:green
-}
-.headerIcon{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-
-}
-.headerIcon i{
-    font-size: 25px;
-    color: rgb(136, 127, 127);
-    border-radius:20px;
-    background:rgba(75, 73, 73, 0.253);
-    padding: 5px;
-    align-items: center;
-}
-.headerIcon i:hover{
-    cursor: pointer;
-    font-size: 25px;
-    color: rgb(189, 185, 185);
-    border-radius:20px;
-    background: #686666;
-    padding: 5px;
-    align-items: center;
-}
-.middle{
-    margin: 10px auto;
-    height: 80%;
-    width: 100%;
-    background-color: rgb(75, 74, 74);
-    /*/background-image: url(f.jpg);
-    background-size: cover;*/
-    position: relative;
+.container{
     
-}
-.icon{
-    display: flex;
-   
-    justify-content: space-around;
-    color:white;
-    position: relative;
-    top: 95%;
-    
-}
-
-.icon i,.icon p{
-    cursor: pointer;
-    background-color: gray;
-    padding: 5px;
-    border-radius: 20px;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    
-   
-}
-.icon i:hover,.icon p:hover{
-    cursor: pointer;
-    background-color: rgb(249, 249, 250);
-    padding: 5px;
-    border-radius: 20px;
-    align-items: center;
-    color:black!important;
-    
-   
-}
-.foter{
-    height: 10%;
-    width: 99%;
-    margin: auto;
-   
-}
-.ball{
     display: flex;
     justify-content: start;
-    text-align: center;
+ 
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+   
+    max-width: 850px;
+    height: 100%;
     position: relative;
-    top: 10px;
-    height: 30%;
-    width: 30%;
-    margin: auto;
+    padding: 10px;
     
 }
-.circl{
-    top: 0;
-    font-size: 50px;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    cursor: pointer;
-    color: aliceblue;
+.mobile{
+    display: flex;
+    flex: 0 0 50%;
+    width: 95%;
+    height: auto;
+    background-color: rgb(0, 0, 0);
     border-radius: 20px;
+    flex-direction: column;
+    margin-top: 10px;
 }
-.circl:hover{
-    top: 0;
-    font-size: 50px;
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
     width: 100%;
-    height: 100%;
-    margin: auto;
-    cursor: pointer;
-    color: rgb(150, 154, 158);
-    border-radius: 20px;
-}
-.photos{
-    margin: 10px;
-    text-align: center;
-    width: 20%;
-    height: 20%;
+    
 
+}
+.top div .crcl1{
+    font-size: 9px;
+    color: rgb(170, 170, 170);
+    border: 5px solid rgb(37, 37, 37);
+    border-radius: 50%;
+}
+.top div .circle2{
+    font-size: 8px;
+    color: rgb(68, 245, 156);
+    
+}
+.top2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+   
+}
+.cam3{
+    width: 15px;
+    height: 15px;
+    font-size: 8px;
+    border: 1px solid yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    color:yellow;
+    background-color: rgb(19, 19, 18);
+}
+.cam2,.cam1,.cam4,.cam5{
+    color:white;
+    cursor: pointer;
+}
+.middle{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+#cameraVideo{
+    width: 96%;
+    height: 100%;
+    display: block;
+    background-color:transparent;
+}
+.cameicon{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position:absolute;
+    bottom:0;
+    
+}
+.snap{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+   width: 100%;
+    color:white;
+    padding-bottom: 20px;
+}
+.snap i:hover{
+   background-color: gray;
+    padding: 2px;
+    border:5px solid white;
+    color:yellow;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.image{
+    overflow-x: scroll;
+    padding: 20px 0;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+.image div:hover{
+    background-color: gray;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color:yellow;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.bottn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(78, 78, 78);
+    border-radius: 20px;
+}
+.bottn .btns{
+    background-color: rgb(209, 207, 207);
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 2.5s;
+}
+.bottn:hover, .bottn .btns:hover{
+background-color: rgb(247, 169, 2);
+}
+.menuaitems{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+.menuaitems i{
+    padding: 10px;
+
+}
+.menuaitems i:hover{
+    background: gray;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    height: auto;
+    background-color:transparent;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 200px;
+    
+
+}
+
+.item1 img{
+    width: 150px;
+    height: 80px;
+   
+    
+}
+
+.item1 img:hover{
+    position: absolute;
+    z-index: 99;
+   width: 100%;
+   cursor: pointer;
+   height: 100%;
+   overflow: hidden;
+   top:0;
+   left: 0;
+   object-fit: cover;
+   border:2px solid green;
+   border-radius: 50px;
+   padding: 50px;
+   background-color: white;
+   margin-bottom: 100px;
 }
